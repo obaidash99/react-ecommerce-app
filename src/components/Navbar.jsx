@@ -17,7 +17,7 @@ const Wrapper = styled.div`
 `;
 
 const Left = styled.div`
-	felx: 1;
+	flex: 1;
 	display: felx;
 	align-items: center;
 `;
@@ -41,7 +41,7 @@ const Input = styled.input`
 `;
 
 const Center = styled.div`
-	felx: 1;
+	flex: 1;
 	text-align: center;
 `;
 
@@ -50,7 +50,7 @@ const Logo = styled.h1`
 `;
 
 const Right = styled.div`
-	felx: 1;
+	flex: 1;
 	display: flex;
 	align-items: center;
 	justify-content: flex-end;
