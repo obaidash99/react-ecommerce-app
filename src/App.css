@@ -40,3 +40,15 @@ a {
 .nav-item:hover {
 	transform: scale(1.1);
 }
+
+.cate-item-btn {
+	border: none;
+	padding: 10px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	border-radius: 5px;
+	cursor: pointer;
+	background-color: #fff;
+	color: gray;
+	font-weight: bold;
+}

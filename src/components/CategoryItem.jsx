@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { categories } from '../data';
+import { Link } from 'react-router-dom';
 
 const Container = styled.div`
 	flex: 1;
@@ -29,17 +30,6 @@ const Title = styled.h2`
 	margin-bottom: 20px;
 	text-transform: uppercase;
 `;
-const Button = styled.button`
-	border: none;
-	padding: 10px;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	border-radius: 5px;
-	cursor: pointer;
-	background-color: #fff;
-	color: gray;
-	font-weight: bold;
-`;
 
 const CategoryItem = ({ item }) => {
 	return (
@@ -47,7 +37,7 @@ const CategoryItem = ({ item }) => {
 			<Image src={item.img} />
 			<Info>
 				<Title>{item.title}</Title>
-				<Button>Shop Now</Button>
+				<Link className="cate-item-btn">Shop Now</Link>
 			</Info>
 		</Container>
 	);
