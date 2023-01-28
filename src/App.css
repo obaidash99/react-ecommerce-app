@@ -3,6 +3,34 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+
 body {
 	font-family: 'Urbanist', sans-serif;
+}
+
+.slider-btn {
+	padding: 10px;
+	font-size: 20px;
+	background-color: transparent;
+	cursor: pointer;
+	text-decoration: none;
+	border: 1px solid black;
+	color: black;
+	transition: all 0.3s ease;
+	letter-spacing: 1px;
+}
+.slider-btn:hover {
+	background-color: teal;
+	color: #fff;
+	border-color: teal;
+}
+
+.nav-btn {
+	color: #000;
+	text-decoration: none;
+	transition: all 0.3s ease;
+}
+
+.nav-btn {
+	transform: scale(1.1);
 }

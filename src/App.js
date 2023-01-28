@@ -1,19 +1,34 @@
 import './App.css';
-import Product from './pages/Product';
+
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+import Navbar from './components/Navbar';
+import { Announcement } from './components/Announcement';
+import Footer from './components/Footer';
+
 import Home from './pages/Home';
+import Product from './pages/Product';
 import ProductsList from './pages/ProductsList';
 import Register from './pages/Register';
 import Login from './pages/Login';
 import Cart from './pages/Cart';
+import Newsletter from './components/Newsletter';
+import Products from './components/Products';
 
 function App() {
 	return (
-		// <Home />
-		// <ProductsList />
-		// <Product />
-		// <Register />
-		// <Login />
-		<Cart />
+		<div>
+			<Router>
+				<Navbar />
+				<Announcement />
+				<Routes>
+					<Route path="/" element={<Home />} />
+					<Route path="/products" element={<Products />} />
+				</Routes>
+				<Newsletter />
+				<Footer />
+			</Router>
+		</div>
 	);
 }
 

@@ -1,5 +1,5 @@
 import { Search } from '@mui/icons-material';
-import React from 'react';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 import Badge from '@mui/material/Badge';
@@ -77,12 +77,22 @@ const Navbar = () => {
 					<Logo>LAMA.</Logo>
 				</Center>
 				<Right>
-					<MenuItem>Register</MenuItem>
-					<MenuItem>SignIn</MenuItem>
 					<MenuItem>
-						<Badge badgeContent={3} color="secondary">
-							<ShoppingCartOutlinedIcon color="action" />
-						</Badge>
+						<Link className="nav-btn" to="/register">
+							Register
+						</Link>
+					</MenuItem>
+					<MenuItem>
+						<Link className="nav-btn" to="/sign">
+							SignIn
+						</Link>
+					</MenuItem>
+					<MenuItem>
+						<Link to="/cart">
+							<Badge badgeContent={3} color="secondary">
+								<ShoppingCartOutlinedIcon color="action" />
+							</Badge>
+						</Link>
 					</MenuItem>
 				</Right>
 			</Wrapper>
