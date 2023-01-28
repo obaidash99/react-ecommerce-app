@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import ProductsList from './pages/ProductsList';
 import Register from './pages/Register';
 import Login from './pages/Login';
+import Cart from './pages/Cart';
 
 function App() {
 	return (
@@ -11,7 +12,8 @@ function App() {
 		// <ProductsList />
 		// <Product />
 		// <Register />
-		<Login />
+		// <Login />
+		<Cart />
 	);
 }
 
