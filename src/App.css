@@ -4,8 +4,17 @@
 	box-sizing: border-box;
 }
 
+:root {
+	--transition: all 0.3s ease;
+}
+
 body {
 	font-family: 'Urbanist', sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
 }
 
 .slider-btn {
@@ -13,10 +22,8 @@ body {
 	font-size: 20px;
 	background-color: transparent;
 	cursor: pointer;
-	text-decoration: none;
 	border: 1px solid black;
-	color: black;
-	transition: all 0.3s ease;
+	transition: var(--transition);
 	letter-spacing: 1px;
 }
 .slider-btn:hover {
@@ -25,12 +32,11 @@ body {
 	border-color: teal;
 }
 
-.nav-btn {
-	color: #000;
-	text-decoration: none;
-	transition: all 0.3s ease;
+.nav-btn,
+.nav-item {
+	transition: var(--transition);
 }
 
-.nav-btn {
+.nav-item:hover {
 	transform: scale(1.1);
 }

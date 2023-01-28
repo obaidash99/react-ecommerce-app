@@ -10,7 +10,7 @@ const Container = styled.div`
 `;
 
 const Wrapper = styled.div`
-	padding: 10px 20px;
+	padding: 10px 30px;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -38,6 +38,7 @@ const SearchContainer = styled.div`
 
 const Input = styled.input`
 	border: none;
+	outline: none;
 `;
 
 const Center = styled.div`
@@ -47,6 +48,11 @@ const Center = styled.div`
 
 const Logo = styled.h1`
 	font-weight: bold;
+	transition: all 0.3s ease;
+
+	&:hover {
+		color: teal;
+	}
 `;
 
 const Right = styled.div`
@@ -74,20 +80,22 @@ const Navbar = () => {
 					</SearchContainer>
 				</Left>
 				<Center>
-					<Logo>LAMA.</Logo>
+					<Link to="/">
+						<Logo>LAMA.</Logo>
+					</Link>
 				</Center>
 				<Right>
-					<MenuItem>
+					<MenuItem className="nav-item">
 						<Link className="nav-btn" to="/register">
 							Register
 						</Link>
 					</MenuItem>
-					<MenuItem>
-						<Link className="nav-btn" to="/sign">
-							SignIn
+					<MenuItem className="nav-item">
+						<Link className="nav-btn" to="/login">
+							Log In
 						</Link>
 					</MenuItem>
-					<MenuItem>
+					<MenuItem className="nav-item">
 						<Link to="/cart">
 							<Badge badgeContent={3} color="secondary">
 								<ShoppingCartOutlinedIcon color="action" />
